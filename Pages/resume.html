@@ -70,18 +70,25 @@
 
     <div class="resume-section">
       <h3>Contact Me</h3>
+
       <p>
         I am open to internships, entry-level positions, and collaborative projects.
-        Feel free to reach out using the contact information below.
+        Please use the form below to get in touch.
       </p>
 
-      <ul class="contact-list">
-        <li>
-          <i class="fa-solid fa-envelope"></i>
-          <strong>Email:</strong>
-          Judah@csanyi.ca
-        </li>
+      <form action="https://formspree.io/f/mvzbjaqg" method="POST" class="contact-form">
 
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+
+      <ul class="contact-list">
         <li>
           <i class="fa-brands fa-github"></i>
           <strong>GitHub:</strong>
@@ -93,9 +100,12 @@
         <li>
           <i class="fa-brands fa-linkedin"></i>
           <strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/in/judah-csanyi-a01406355" target="_blank">LinkedIn Profile</a>
+          <a href="https://www.linkedin.com/in/judah-csanyi-a01406355" target="_blank">
+            LinkedIn Profile
+          </a>
         </li>
       </ul>
+
     </div>
 
   </section>
