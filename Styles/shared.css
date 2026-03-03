@@ -1,0 +1,210 @@
+/* ═══════════════════════════════════════════
+   shared.css — Portfolio-wide base styles
+   Judah Csanyi | NSCC IT Programming
+═══════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:   #0b1f3a;
+  --blue:   #1a4d8f;
+  --accent: #3d9be9;
+  --gold:   #e8b84b;
+  --light:  #f4f7fb;
+  --white:  #ffffff;
+  --text:   #1e2d40;
+  --muted:  #6b7f96;
+  --border: #d8e4f0;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background: var(--light);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* ── HEADER ── */
+header {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 40px 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.header-tag {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(232,184,75,0.4);
+  padding: 4px 12px;
+  border-radius: 3px;
+  margin-bottom: 18px;
+}
+
+header h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+header h1 span { color: var(--accent); }
+
+header p {
+  margin-top: 12px;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.header-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(61,155,233,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(61,155,233,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.header-glow {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(61,155,233,0.18) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* ── NAV ── */
+nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 16px rgba(11,31,58,0.07);
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 16px 22px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+nav a:hover  { color: var(--blue); }
+nav a.active { color: var(--blue); border-bottom-color: var(--accent); }
+
+/* ── MAIN CONTAINER ── */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 40px 100px;
+}
+
+/* ── SECTION LABEL ── */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.section-label .dot {
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.section-label h2 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.section-intro {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 680px;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+/* ── DIVIDER ── */
+.section-gap {
+  height: 1px;
+  background: var(--border);
+  margin: 64px 0;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--navy);
+  text-align: center;
+  padding: 30px;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.3);
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.08em;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.anim { animation: fadeUp 0.5s ease both; }
+.anim-1 { animation: fadeUp 0.5s ease 0.1s both; }
+.anim-2 { animation: fadeUp 0.5s ease 0.2s both; }
+.anim-3 { animation: fadeUp 0.5s ease 0.3s both; }
+.anim-4 { animation: fadeUp 0.5s ease 0.4s both; }
+
+/* ── RESPONSIVE BASE ── */
+@media (max-width: 700px) {
+  .header-inner { padding: 40px 24px 36px; }
+  main          { padding: 40px 20px 70px; }
+  .nav-inner    { padding: 0 12px; overflow-x: auto; }
+  nav a         { padding: 14px 14px; font-size: 0.78rem; }
+}

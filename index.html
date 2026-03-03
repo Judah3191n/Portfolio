@@ -1,56 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>About Me | Judah Csanyi</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Styles/shared.css" />
+  <link rel="stylesheet" href="Styles/index.css" />
 </head>
 <body>
 
 <header>
-  <h1>About Me</h1>
-  <p>Judah Csanyi | IT Programming Student - NSCC</p>
+  <div class="header-grid"></div>
+  <div class="header-glow"></div>
+  <div class="header-inner">
+    <div class="header-tag">NSCC · IT Programming</div>
+    <h1>About <span>Me</span></h1>
+    <p>Judah Csanyi — IT Programming Student</p>
+  </div>
 </header>
 
 <nav>
-  <a href="index.html">About Me</a>
-  <a href="Pages/samples.html">Work Samples</a>
-  <a href="Pages/education.html">Education & Evidence</a>
-  <a href="Pages/resume.html">Resume</a>
+  <div class="nav-inner">
+    <a href="index.html" class="active">About Me</a>
+    <a href="Pages/samples.html">Work Samples</a>
+    <a href="Pages/education.html">Education &amp; Evidence</a>
+    <a href="Pages/resume.html">Resume</a>
+  </div>
 </nav>
-<main> 
-  <section>
 
-    <div class="about-header">
-        <img
-        src="Images/JudahProfilePicture.jpg"
-        alt="Professional headshot placeholder"
-        class="profile-pic"
-        >
+<main>
 
-        <div>
-        <h2>Judah Csanyi</h2>
-        <p>
-            IT Programming student at Nova Scotia Community College with an interest
-            in software development and systems administration.
-        </p>
-        </div>
+  <div class="about-header anim">
+    <img src="Images/JudahProfilePicture.jpg" alt="Judah Csanyi" class="profile-pic" />
+    <div>
+      <div class="name">Judah Csanyi</div>
+      <div class="role">IT Programming · NSCC</div>
+      <p class="bio">
+        IT Programming student at Nova Scotia Community College with a strong
+        interest in software development and systems administration. I enjoy working
+        through complex problems and building reliable, well-structured applications.
+      </p>
     </div>
+  </div>
 
-    <h2>Career Goals</h2>
-    <p>
-        My goal is to begin my career in a junior IT or software development role
-        where I can apply my technical skills and continue learning in a professional
-        environment.
-    </p>
-
-    <h2>Who I Am</h2>
-    <p>
-      I am an IT Programming student at Nova Scotia Community College with a strong
-      interest in software development and systems administration. I enjoy working
-      through complex problems and building reliable, well-structured applications.
-    </p>
-
+  <div class="content-block anim-1">
     <h2>Career Goals</h2>
     <p>
       My goal is to begin my career in a junior IT or software development role where
@@ -61,16 +53,20 @@
       Long term, I aim to grow into a senior technical role focused on backend
       development or system administration.
     </p>
+  </div>
 
+  <div class="content-block anim-2">
     <h2>Skills Overview</h2>
-    <ul>
+    <ul class="skills-list">
       <li>Programming in Python and Java</li>
       <li>Web development using HTML, CSS, and JavaScript</li>
       <li>SQL databases and data handling</li>
       <li>Linux and Windows system administration</li>
       <li>Git and version control</li>
     </ul>
+  </div>
 
+  <div class="content-block anim-3">
     <h2>Learning Reflection</h2>
     <p>
       Throughout the IT Programming program, I have strengthened my problem-solving
@@ -78,9 +74,13 @@
       nature of the coursework has helped me bridge the gap between theory and
       practical application.
     </p>
+  </div>
 
-  </section>
 </main>
+
+<footer>
+  Judah Csanyi &nbsp;·&nbsp; NSCC IT Programming &nbsp;·&nbsp; Portfolio
+</footer>
 
 </body>
 </html>

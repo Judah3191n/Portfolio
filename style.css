@@ -65,11 +65,7 @@ h2 {
   height: auto;
 }
 
-.course-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
+
 .about-header {
   display: flex;
   align-items: center;
@@ -183,4 +179,38 @@ h2 {
 
 .contact-form button:hover {
   background-color: #444;
+}
+
+
+/* educaton courses cards */
+
+.course-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* space between Year 1 and Year 2 */
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.course-card {
+  display: block;
+  padding: 16px 18px;
+  background: #ffffff;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-left: 6px solid #005a9c;
+  transition: all 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+  color: #005a9c;
 }

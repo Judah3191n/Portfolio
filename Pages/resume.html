@@ -1,114 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Me | Judah Csanyi</title>
-
-  <link rel="stylesheet" href="../style.css">
-
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  <meta charset="UTF-8" />
+  <title>Resume &amp; Contact | Judah Csanyi</title>
+  <link rel="stylesheet" href="../Styles/shared.css" />
+  <link rel="stylesheet" href="../Styles/resume.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
 
 <header>
-  <h1>Contact Me</h1>
-  <p>Judah Csanyi | IT Programming Student - NSCC</p>
+  <div class="header-grid"></div>
+  <div class="header-glow"></div>
+  <div class="header-inner">
+    <div class="header-tag">NSCC · IT Programming</div>
+    <h1>Resume &amp; <span>Contact</span></h1>
+    <p>Judah Csanyi — Open to internships and entry-level opportunities</p>
+  </div>
 </header>
 
 <nav>
-  <a href="../index.html">About Me</a>
-  <a href="samples.html">Work Samples</a>
-  <a href="education.html">Education & Evidence</a>
-  <a href="resume.html">Resume</a>
+  <div class="nav-inner">
+    <a href="../index.html">About Me</a>
+    <a href="samples.html">Work Samples</a>
+    <a href="education.html">Education &amp; Evidence</a>
+    <a href="resume.html" class="active">Resume</a>
+  </div>
 </nav>
 
-
 <main>
-  <section class="resume-card">
+  <div class="resume-layout">
 
-    <div class="resume-header">
-      <h2>Judah Csanyi</h2>
-      <p>IT Programming Student</p>
-      <p>
-        Focused on backend development, system administration,
-        and practical software solutions.
-      </p>
-    </div>
+    <!-- ── LEFT: RESUME CONTENT ── -->
+    <div>
 
-    <div class="resume-actions">
-      <a class="btn" href="../Documents/Csanyi_Judah_Resume_2025.pdf" target="_blank">
-        Download PDF Résumé
-      </a>
-    </div>
+      <div class="resume-card" style="margin-bottom: 24px;">
+        <div class="resume-section">
+          <h2>Professional Summary</h2>
+          <p>
+            IT Programming student with hands-on experience in software development,
+            databases, and operating systems. Skilled in applying programming
+            fundamentals to solve real-world problems through coursework and projects.
+          </p>
+        </div>
 
-    <hr>
+        <div class="resume-section">
+          <h2>Education</h2>
+          <p>
+            <strong>Diploma — IT Programming</strong><br />
+            Nova Scotia Community College (NSCC)<br />
+            2024 – 2026
+          </p>
+        </div>
 
-    <div class="resume-section">
-      <h3>Professional Summary</h3>
-      <p>
-        IT Programming student with hands-on experience in software development,
-        databases, and operating systems. Skilled in applying programming
-        fundamentals to solve real-world problems through coursework and projects.
-      </p>
-    </div>
-
-    <div class="resume-section">
-      <h3>Education</h3>
-      <p>
-        <strong>Diploma - IT Programming</strong><br>
-        Nova Scotia Community College (NSCC)<br>
-        2024 - 2026
-      </p>
-    </div>
-
-    <div class="resume-section">
-      <h3>Contact Me</h3>
-
-      <p>
-        I am open to internships, entry-level positions, and collaborative projects.
-        Please use the form below to get in touch.
-      </p>
-
-      <form action="https://formspree.io/f/mvzbjaqg" method="POST" class="contact-form">
-
-        <input type="text" name="name" placeholder="Your Name" required>
-
-        <input type="email" name="email" placeholder="Your Email" required>
-
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-
-        <button type="submit">Send Message</button>
-
-      </form>
-
-      <ul class="contact-list">
-        <li>
-          <i class="fa-brands fa-github"></i>
-          <strong>GitHub:</strong>
-          <a href="https://github.com/Judah3191n" target="_blank">
-            github.com/Judah3191n
+        <div class="resume-section">
+          <h2>Download Resume</h2>
+          <p style="margin-bottom: 18px;">
+            A full PDF version of my résumé is available for download below.
+          </p>
+          <a class="btn-download" href="../Documents/Csanyi_Judah_Resume_2025.pdf" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF Resume
           </a>
-        </li>
-
-        <li>
-          <i class="fa-brands fa-linkedin"></i>
-          <strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/in/judah-csanyi-a01406355" target="_blank">
-            LinkedIn Profile
-          </a>
-        </li>
-      </ul>
+        </div>
+      </div>
 
     </div>
 
-  </section>
+    <!-- ── RIGHT: CONTACT ── -->
+    <div>
+
+      <div class="sidebar-card" style="margin-bottom: 24px;">
+        <h2>Connect</h2>
+        <ul class="contact-links">
+          <li>
+            <a href="https://github.com/Judah3191n" target="_blank">
+              <span class="link-icon"><i class="fa-brands fa-github"></i></span>
+              <span class="link-meta">
+                <span class="link-label">GitHub</span>
+                github.com/Judah3191n
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/judah-csanyi-a01406355" target="_blank">
+              <span class="link-icon"><i class="fa-brands fa-linkedin"></i></span>
+              <span class="link-meta">
+                <span class="link-label">LinkedIn</span>
+                LinkedIn Profile
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h2>Send a Message</h2>
+        <form action="https://formspree.io/f/mvzbjaqg" method="POST" class="contact-form">
+          <input type="text"  name="name"    placeholder="Your Name"    required />
+          <input type="email" name="email"   placeholder="Your Email"   required />
+          <textarea           name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
 </main>
+
+<footer>
+  Judah Csanyi &nbsp;·&nbsp; NSCC IT Programming &nbsp;·&nbsp; Portfolio
+</footer>
+
 </body>
 </html>
