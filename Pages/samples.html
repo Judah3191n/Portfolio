@@ -34,9 +34,6 @@
     <div class="dot"></div>
     <h2>Technical Skills</h2>
   </div>
-  <p class="section-intro">
-    A summary of the technical skills developed through coursework and applied in practical projects.
-  </p>
 
   <div class="skills-grid">
     <div class="skill-card">
@@ -53,14 +50,6 @@
         <li>C#</li>
         <li>.NET Framework / .NET</li>
         <li>WPF / Windows Forms</li>
-      </ul>
-    </div>
-    <div class="skill-card">
-      <h3>Web Development</h3>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
       </ul>
     </div>
     <div class="skill-card">
@@ -93,6 +82,37 @@
   </p>
 
   <div class="samples-list">
+
+    <div class="work-sample">
+      <div class="sample-img">
+        <img src="../Images/Maze_Solver.png" class="clickable" alt="Maze Solver using Stack Backtracking" />
+      </div>
+      <div class="sample-text">
+        <div class="sample-tag">Data Structures & Algorithms</div>
+        <h3>Automated Maze Solver</h3>
+        <p>
+          Engineered a maze-solving application that implements a <strong>Stack-based 
+          backtracking algorithm</strong>. The system navigates complex coordinate grids, 
+          utilizing a stack to track the current path and retreat from dead ends to 
+          efficiently find a valid exit.
+        </p>
+      </div>
+    </div>
+
+    <div class="work-sample">
+      <div class="sample-img">
+        <img src="../Images/Line_Editor.png" class="clickable" alt="Terminal Line Editor using Linked " />
+      </div>
+      <div class="sample-text">
+        <div class="sample-tag">Data Structures</div>
+        <h3>Linked List Line Editor</h3>
+        <p>
+          Built a terminal-based text editor utilizing a <strong>Linked List</strong> to manage 
+          text lines. This implementation allows for efficient $O(1)$ insertions and deletions at any 
+          position, providing a lightweight alternative to buffer-based editing for large files.
+        </p>
+      </div>
+    </div>
 
     <div class="work-sample">
       <div class="sample-img">
@@ -148,11 +168,7 @@
   Judah Csanyi &nbsp;·&nbsp; NSCC IT Programming &nbsp;·&nbsp; Portfolio
 </footer>
 
-<script>
-  document.querySelectorAll('.clickable').forEach(img => {
-    img.addEventListener('click', () => img.classList.toggle('expanded'));
-  });
-</script>
+<script src="../Scripts/samples.js"></script>
 
 </body>
 </html>

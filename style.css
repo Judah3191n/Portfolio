@@ -56,10 +56,18 @@ h2 {
   transition: transform 0.3s;
 }
 
-.work-sample img:hover {
-  transform: scale(1.05);
+.sample-img img.expanded {
+  position: fixed;
+  inset: 0;           /* Shortcut for top, bottom, left, right: 0 */
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain; 
+  background: rgba(0, 0, 0, 0.9); /* Pure black backdrop for better contrast */
+  z-index: 99999;     /* Ensure it stays ABOVE everything else */
+  padding: 20px;
+  cursor: zoom-out;
+  border-radius: 0;
 }
-
 .work-sample img.expanded {
   width: 80%;
   height: auto;
